@@ -1,0 +1,35 @@
+<div class="contenedor">
+  <div class="ngx-codemirror mb-2 code">
+    <h2 class="title">Codigo</h2>
+    <ngx-codemirror id="code"
+      [(ngModel)]="codigo"
+      [options]="{
+        textarea:true,
+        lineNumbers: true,
+        theme: 'night',
+        mode: 'javascript',
+        autofocus: true,  
+        lineWrapping:true
+      }"  
+    ></ngx-codemirror>
+    <br>
+    <button type="button" class="btn btn-success" (click)="ejecutar()">Ejecutar</button>
+  </div>
+  <div class="ngx-codemirror mb-2 console">
+    <h2 class="title">Consola</h2>
+    <ngx-codemirror id="console"
+      [ngModel]="consola.consola"
+      [options]="{
+        textarea:true,
+        lineNumbers: true,
+        theme: 'night',
+        mode: 'javascript',
+        autofocus: true,
+        lineWrapping:true,
+        readOnly:true
+        }"  
+    ></ngx-codemirror>
+    <br>
+    <button type="button" class="btn btn-danger" (click)="limpiar()">Limpiar</button>
+  </div>  
+</div>

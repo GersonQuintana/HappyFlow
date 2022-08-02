@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+    <div class="container">
+      <a class="navbar-brand" routerLink="/">DB-Rust</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/editor" routerLinkActive="active"><i class="fa-solid fa-code"></i> Editor</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fa-solid fa-table"></i> Reportes
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" routerLink="reporte/tabla_errores"><i class="fa-solid fa-circle-exclamation"></i> Tabla de errores</a>
+              <a class="dropdown-item" routerLink="reporte/tabla_simbolos"><i class="fa-solid fa-hashtag"></i> Tabla de simbolos</a>
+              <a class="dropdown-item" routerLink="reporte/bases_datos"><i class="fa-solid fa-database"></i> Bases de datos</a>
+              <a class="dropdown-item" routerLink="reporte/tablas_bd"><i class="fa-solid fa-server"></i> Tablas de Bases de datos</a>
+            </div>
+          </li>
+        <li class="nav-item">
+          <!-- Button trigger modal -->
+<li class="nav-item about"><a class="nav-link" data-toggle="modal" data-target="#exampleModalCenter">
+  Acerca de 
+</a></li>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle"><b>Datos del Estudiante</b></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <b>Nombre:</b> Gerson Sebastian Quintana Berganza <br>
+        <b>Carné:</b> 201908686 <br>
+        <b>Curso:</b> Org. de Lenguajes y Compiladores 2 <br>
+        <b>Sección:</b> A
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+      </ul>
+    </div>
+    </div>
+  </nav>
